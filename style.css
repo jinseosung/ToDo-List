@@ -18,3 +18,7 @@ img {
   bottom: 0;
   z-index: -1;
 }
+
+#todo-list {
+  list-style: none;
+}
