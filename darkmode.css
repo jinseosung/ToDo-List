@@ -1,0 +1,37 @@
+.dark-mode {
+  background-color: #0c2461;
+}
+
+.boxs.dark-mode {
+  background-color: #4a69bd;
+}
+
+.box1__greeting.dark-mode,
+.box1__video.dark-mode {
+  box-shadow: 1px 1px 6px 5px #6179ba;
+}
+
+.box1.dark-mode {
+  background-color: #738fdd;
+  box-shadow: 3px 0px 3px 0px #4a5d8f;
+}
+
+.btn__dark-mode.dark-mode,
+.btn__log-out.dark-mode {
+  background-color: #4a69bd;
+}
+
+.box2.dark-mode {
+  background-color: #4a69bd;
+  box-shadow: 1px 1px 6px 5px #354b87;
+}
+
+.box3__inner.dark-mode {
+  background-color: #a3b7ee;
+  box-shadow: 2px 2px 6px 5px #3c5599;
+}
+
+.box3__quote.dark-mode {
+  background-color: #6281d6;
+  box-shadow: 1px 1px 6px 5px #3c5599;
+}
