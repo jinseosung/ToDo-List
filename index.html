@@ -5,46 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Momentum App</title>
+    <script
+      src="https://kit.fontawesome.com/7a5ea5d2cb.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>To-Do List App</title>
   </head>
   <body>
+    
+    <form id="login-form" class="loginForm hidden">
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name?"
+      />
+    </form>
+
     <div class="boxs">
       <div class="box1">
-        <form id="login-form" class="hidden">
-          <input
-            required
-            maxlength="15"
-            type="text"
-            placeholder="What is your name?"
-          />
-          <input type="submit" value="Log In" />
-        </form>
-        <h1 id="greeting" class="hidden"></h1>
-        <iframe
-          width="560"
-          height="315"
+        <h1 id="greeting" class="box1__greeting"></h1>
+        <iframe class="box1__video"
+          width="230"
+          height="127"
           src="https://www.youtube.com/embed/vmJ5Plud_Xc?autoplay=1&loop=1"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
+        <div class="box1__btns">
+          <button class="btn__dark-mode">
+            <i class="fa-regular fa-moon"></i>
+          </button>
+          <button class="btn__log-out"><i class="fa-solid fa-arrow-right-from-bracket"></i>
+          </div>
       </div>
       <div class="box2">
-        <form id="todo-form">
-          <input
-            type="text"
-            placeholder="Write a To Do and Press Enter"
-            required
-          />
-        </form>
-        <ul id="todo-list"></ul>
+        <div class="box2__inner">
+          <h2>To-Do List</h2>
+          <form id="todo-form" class="box2__form">
+            <input
+              type="text"
+              placeholder="Write a To Do and Press Enter"
+              required
+            />
+          </form>
+          <ul id="todo-list" class="box2__list"></ul>
+        </div>
       </div>
       <div class="box3">
-        <h2 id="clock">00:00:00</h2>
-        <div id="quote">
-          <span></span>
-          <span></span>
+        <div class="box3__inner">
+          <h2 id="clock">00:00:00</h2>
+          <h3 id="date" class="box3__date"></h3>
+        </div>
+        <div class="box3__quote">
+          <h2>Today's Quote</h2>
+          <div id="quote">
+            <span></span><br />
+            <span></span>
+          </div>
         </div>
       </div>
     </div>
@@ -52,5 +72,7 @@
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/logout.js"></script>
   </body>
 </html>
